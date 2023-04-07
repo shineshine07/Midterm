@@ -1,0 +1,128 @@
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+nav {
+	background-color:black;
+	color: #fff;
+	text-align: center;
+    padding: 16px;
+    font-size: larger;
+
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {
+	padding: 10px;
+	color: #fff;
+}
+nav ul li a:hover {
+	background-color: #790c0c;
+}
+
+
+header {
+	display: flex;
+	height: 400px;
+	background-size: cover;
+	background-attachment: fixed;
+	align-items: center;
+	justify-content: center;
+	background-image: url(https://via.placeholder.com/1920x1080.png);
+}
+
+h1 {
+
+	font-size: 80px;
+	color: #fff;
+
+}
+
+
+section {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px;
+
+}
+.subsection {
+	flex: content;
+	margin-bottom: 20px;
+	
+
+}
+.subsection p{
+	font-size: x-large	;
+}
+.subsection img {
+	margin: 0 auto;
+	border: 2px solid black;
+}
+
+ul {
+    list-style-type: disc;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li:nth-child(1) {
+    color: purple;
+
+  }
+  li:nth-child(2) {
+    color: blue;
+	
+  }
+  li:nth-child(3) {
+    color: green;
+
+  }
+
+form {
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+
+}
+
+input,
+textarea {
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+
+}
+
+
+input[type="submit"] {
+	background-color: navy;
+	color: #fff;
+}
+input[type="submit"]:hover {
+	background-color: #0077b3;
+}
+
+
+footer {
+	position: fixed;
+	background-color: goldenrod;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: large;
+	color: bisque;
+}
+@media only screen and (max-width: 768px) {
+	section {
+	  flex-direction: column;
+	  align-items: center;
+	}
+	.subsection {
+	  width: 100%;
+	}
+  }
